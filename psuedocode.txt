@@ -1,0 +1,26 @@
+
+
+UI.js
+
+sidenav:
+    Handle adding a new project button 
+        - Create input, buttons
+        - On button click, add input (rqeuired field) to project list.
+        - place a new "Add Project" button below that created project
+    
+    Handle sorting projects
+        - When a new button is selected and active, show projects that are specific to that criteria
+        - **Create an algorithm that only shows item lists with that project name, date, etc.
+    
+
+storage.js:
+contains all of projects information.
+
+
+task.js
+    - A task object that contains all information of due dates, name, description, etc.
+    - Contains info on deleting itself.
+
+project.js 
+    A project object that contains its name and all task objects in an array
+

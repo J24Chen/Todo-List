@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✔✔Todo List</title>
+    
+    <script src="index.js"defer></script>
+</head>
+<body>
+    <header>
+        <h1>Todo-ify</h1>
+    </header>
+
+    <section class="main">
+        
+        <section class="sidenav">
+            <div class="default-project-list">
+                <button class="button-tab active" id="button-main">Main</button>
+                <button class="button-tab" id="button-today">Today</button>
+                <button class="button-tab" id="button-week">This Week</button>
+            </div>
+
+            <h1>Projects</h1>
+
+            <div class="user-project-list">
+                <button class="button-tab" id="poppy">Poppy</button>
+                <button class="add-project-button" id="add-project">Add Project</button>
+                <div class="project-creation-popup">
+                    <input class = "input-box" type="text" id="project-name" maxlength="18">
+                    <div class="create-project-buttons"> 
+                        <button class="add-button" id="project-add-button">Add</button>
+                        <button class="cancel-button" id="project-cancel-button">cancel</button>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+        </section>
+        
+        <section class="content">
+
+            <div class="list-container">
+                <div class="list-container-header">
+                    <h2>due date ^</h1>
+                    <h1 class="top-row-title"> Main</h1>    
+                </div>
+                
+                <ul>
+                    <li class="item">
+                        <div class="priority green"></div>
+                        <input class = "checkbox" type="checkbox"></button>
+                        <div class="due-date">17:00, 11-20-2024</div>
+                        <div class="item-title-and-description">
+                            <div class="title">Do the Laundry</div>
+                            <div class="description">A description of multiple things and stuff and keep yapping until this starts overflowing or something goes wrong here </div>
+                        </div>
+                        <img class = "edit-button" src="/images/file-document-edit-outline.svg" alt="edit">
+                        <img class = "delete-button" src="/images/window-close.svg" alt="delete">
+                    </li>
+                </ul>    
+            </div>
+            
+            
+        </section>
+    </section>
+</body>
+</html>

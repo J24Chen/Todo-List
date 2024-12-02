@@ -1,0 +1,220 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size:1.5rem;
+    background-color: #000000;
+    color:white;
+    border-bottom:1px solid black ;
+    height:10vh;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+
+
+
+.main {
+    display:flex;
+    align-items: stretch;
+}
+
+/* --------- Side Nav section ---------*/
+.sidenav {
+    width:20vw;
+    min-width: 220px;
+    background-color: gray;
+    align-self: stretch;
+    height:90vh;
+    padding:2rem 1rem 0 1rem;
+}
+
+
+/* Force each Item in sidenav to be in a new line*/
+
+.sidenav * {
+    display:block;
+}
+
+.button-tab,
+.add-project-button{
+    border:none;
+    background-color: none;
+    background: none;
+    font:inherit;
+    
+    font-size:1.5rem;
+
+    width:15vw;
+    min-width: 180px;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    
+    border-radius: 5px;
+
+
+}
+
+.sidenav h1 {
+    font-size: 2rem;
+}
+
+.button-tab.active {
+    background-color: rgb(197, 228, 255);
+}
+
+.button-tab:hover,
+.add-project-button:hover{
+    background-color: aliceblue;
+}
+
+#button-main {
+    padding-left: 1rem;
+}
+
+.button-tab, .add-project-button{
+    padding-left:2rem;
+}
+
+
+.content {
+    padding-top:3rem;
+    flex:1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.list-container-header {
+    display: flex;
+}
+
+.top-row-title {
+    flex: 1;
+    text-align: center;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+#project-name {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width:100%;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 1.5rem;
+    
+}
+
+.create-project-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.add-button,
+.cancel-button {
+    border-radius: 5px;
+    border: none;
+    outline:none;
+    text-align: center;
+    flex:1;
+    padding:1rem;
+}
+
+.add-button {
+    background-color: rgb(60, 248, 60);
+}
+.add-button:hover {
+    background-color: rgb(140, 255, 140); 
+    cursor:pointer;
+}
+
+.cancel-button {
+    background-color: rgb(255, 69, 69);
+    text-align: center;
+    flex:1;
+}
+
+.cancel-button:hover {
+    background-color: rgb(255, 145, 145);
+    cursor:pointer;
+}
+
+
+.add-project-button.active {
+    display:none;
+}
+
+.project-creation-popup {
+    display:none;
+}
+
+.project-creation-popup.active {
+    display:block;
+}
+
+
+/* ---todo item section---*/
+
+.item{
+    display:grid;
+    border: 1px solid #000;
+    grid-template-columns: 0.5fr 1fr 2fr 10fr 1fr 1fr;
+}
+
+.item .priority {
+    width:2rem;
+}
+
+.green {
+    background-color: green;
+}
+
+.item .checkbox{
+    width:1.5rem;
+    justify-self: center;
+}
+
+.item .due-date {
+    justify-self: center;
+    align-self: center;
+}
+
+.item .title {
+    font-weight: bold;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+.item .description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    width: 620px;
+}
+
+
+.item .edit-button,
+.item .delete-button {
+    width:30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.item .edit-button:hover,
+.item .delete-button:hover {
+    width:35px;
+    cursor: pointer;
+} 
+
