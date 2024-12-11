@@ -24,3 +24,41 @@ task.js
 project.js 
     A project object that contains its name and all task objects in an array
 
+
+
+
+Add project to storage,
+    - Refresh project list using storage 
+
+Add task to storage
+    - Make a separate project storage 
+
+
+
+
+
+
+initializeProjectButtons
+openProject
+
+loadProjectList
+creareProject;
+
+
+every Button on click MUST HAVE openProject.
+
+
+
+NOTES:
+addEventListener will NOT create multiple instances if the arguments are 
+EXACTLY THE SAME. So using annonymous functions are not recognized as the
+SAME and will create a separate event addEventListener.
+
+
+For tomorrow:
+Make a project storage to contain task objects. 
+Add function to load tasks
+
+Extra todo 12/9/2024
+Make enter key create a project list ONLY if the button has active classList
+

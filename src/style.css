@@ -40,7 +40,7 @@ header {
 }
 
 .button-tab,
-.add-project-button{
+#add-project{
     border:none;
     background-color: none;
     background: none;
@@ -69,7 +69,7 @@ header {
 }
 
 .button-tab:hover,
-.add-project-button:hover{
+#add-project:hover{
     background-color: aliceblue;
 }
 
@@ -77,7 +77,7 @@ header {
     padding-left: 1rem;
 }
 
-.button-tab, .add-project-button{
+.button-tab, #add-project{
     padding-left:2rem;
 }
 
@@ -91,9 +91,11 @@ header {
     flex-direction: column;
 }
 
+.content-container{
+    display: grid;
+}
 
-
-.list-container-header {
+.content-container-header {
     display: flex;
 }
 
@@ -122,7 +124,9 @@ header {
 
 
 .add-button,
-.cancel-button {
+.cancel-button,
+#create-task,
+#edit-task{
     border-radius: 5px;
     border: none;
     outline:none;
@@ -134,9 +138,18 @@ header {
 .add-button {
     background-color: rgb(60, 248, 60);
 }
+.close-button:hover,
+.add-button:hover,
+.cancel-button:hover,
+.item .edit-button:hover,
+.item .delete-button:hover,
+#create-task:hover,
+#edit-task:hover{
+    cursor: pointer;
+}
+
 .add-button:hover {
     background-color: rgb(140, 255, 140); 
-    cursor:pointer;
 }
 
 .cancel-button {
@@ -147,11 +160,10 @@ header {
 
 .cancel-button:hover {
     background-color: rgb(255, 145, 145);
-    cursor:pointer;
 }
 
 
-.add-project-button.active {
+#add-project.active {
     display:none;
 }
 
@@ -176,13 +188,11 @@ header {
     width:2rem;
 }
 
-.green {
-    background-color: green;
-}
 
 .item .checkbox{
     width:1.5rem;
     justify-self: center;
+    
 }
 
 .item .due-date {
@@ -204,10 +214,21 @@ header {
     width: 620px;
 }
 
+.edit-button{
+    background: url(../images/file-document-edit-outline.svg) no-repeat;
+}
 
+.delete-button {
+    background: url(../images/window-close.svg) no-repeat;
+
+}
 .item .edit-button,
 .item .delete-button {
+    
     width:30px;
+    height:30px;
+    outline: none;
+    border:none;
     justify-self: center;
     align-self: center;
 }
@@ -215,6 +236,105 @@ header {
 .item .edit-button:hover,
 .item .delete-button:hover {
     width:35px;
-    cursor: pointer;
-} 
+    height:35px;
+}
+
+
+.checkbox:checked + div,
+.checkbox:checked + div + div{
+    text-decoration: line-through;
+}
+
+
+
+#add-task{
+    height:3rem;
+}
+
+
+
+
+/* add task dialog section*/
+
+dialog{
+    margin:auto;
+    padding:2rem 1rem 2rem 1rem;
+    border-radius: 10px;
+    
+}
+
+form {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.close-button{
+    background: url(../images/close-circle-outline.svg) no-repeat;
+    width:30px;
+    height:30px;
+    outline: none;
+    border:none;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+
+
+textarea,
+form input,
+label{
+    resize: none;
+    font-family: inherit;
+    font-size:1.25rem;
+}
+
+textarea{
+    font-size:1rem;
+}
+
+.priority-container {
+    display: flex;
+    gap:1rem;
+}
+
+input[type="radio"]{
+    display:none;
+}
+
+input + label {
+    padding:3px;
+    border-radius: 2px;
+}
+
+.low {
+    background-color:green;
+}
+
+.medium {
+    background-color: yellow;
+}
+
+.high {
+    background-color:rgb(247, 96, 70);
+}
+
+
+
+input:checked + label{
+    border: none;
+    outline: 2px solid black;
+}
+
+#create-task,
+#edit-task {
+    border: 1px solid #000;
+    margin-top: 1rem;
+}
+
+.hide {
+    display:none;
+}
 

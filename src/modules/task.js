@@ -13,6 +13,10 @@ export default class Task {
         return this.title;
     }
 
+    getDescription() {
+        return this.description;
+    }
+
     getPriority(){
         return this.priority;
     }

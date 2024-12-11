@@ -1,3 +1,5 @@
+import Storage from "./storage";
+
 export default class Project {
     constructor(name){
         this.name = name
@@ -22,6 +24,8 @@ export default class Project {
 
     addTask(task){
         this.tasks.push(task);
+        console.log(this.tasks);
+        Storage.addTask(task,this.name);
     }
 
     removeTask(task){

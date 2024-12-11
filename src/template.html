@@ -17,54 +17,66 @@
         <section class="sidenav">
             <div class="default-project-list">
                 <button class="button-tab active" id="button-main">Main</button>
-                <button class="button-tab" id="button-today">Today</button>
-                <button class="button-tab" id="button-week">This Week</button>
             </div>
 
             <h1>Projects</h1>
 
             <div class="user-project-list">
-                <button class="button-tab" id="poppy">Poppy</button>
-                <button class="add-project-button" id="add-project">Add Project</button>
-                <div class="project-creation-popup">
-                    <input class = "input-box" type="text" id="project-name" maxlength="18">
-                    <div class="create-project-buttons"> 
-                        <button class="add-button" id="project-add-button">Add</button>
-                        <button class="cancel-button" id="project-cancel-button">cancel</button>
-                    </div>
                 </div>
-                
-                
-                
+            <button id="add-project">Add Project</button>
+            <div class="project-creation-popup">
+                <input type="text" id="project-name" maxlength="18" required>
+                <div class="create-project-buttons"> 
+                    <button class="add-button" id="project-add-button">Add</button>
+                    <button class="cancel-button" id="project-cancel-button">cancel</button>
+                </div>
+            
             </div>
             
         </section>
         
         <section class="content">
 
-            <div class="list-container">
-                <div class="list-container-header">
+            <div class="content-container">
+                <div class="content-container-header">
                     <h2>due date ^</h1>
-                    <h1 class="top-row-title"> Main</h1>    
+                    <h1 class="top-row-title">Main</h1>    
                 </div>
                 
-                <ul>
-                    <li class="item">
-                        <div class="priority green"></div>
-                        <input class = "checkbox" type="checkbox"></button>
-                        <div class="due-date">17:00, 11-20-2024</div>
-                        <div class="item-title-and-description">
-                            <div class="title">Do the Laundry</div>
-                            <div class="description">A description of multiple things and stuff and keep yapping until this starts overflowing or something goes wrong here </div>
-                        </div>
-                        <img class = "edit-button" src="/images/file-document-edit-outline.svg" alt="edit">
-                        <img class = "delete-button" src="/images/window-close.svg" alt="delete">
-                    </li>
+                <ul class="list-container">
+                   
                 </ul>    
+
+                <button id="add-task"> Add Task</button>
             </div>
-            
-            
+
+
         </section>
     </section>
+    <dialog>
+        <button class="close-button" autofocus></button>
+        <form>
+            <label for="dialog-title">Title:</label>
+            <input type="text" id="dialog-title" required>
+
+            <label for="dialog-description">description</label>
+            <textarea id="dialog-description" rows ="5" cols="33" required> </textarea> 
+            
+            <p> Priority:</p>
+            <div class="priority-container">
+                <input type="radio"  id="low" value="low" name="priority" checked> 
+                <label for="low" class = "low">low</label>
+                <input type="radio" id="medium" value="medium" name="priority"> 
+                <label for="medium" class = "medium">medium</label>
+                <input type="radio"  id="high" value="high" name="priority"> 
+                <label for="high" class = "high">high</label>
+            </div>
+
+            <label for="dialog-due-date">Due Date:</label>
+            <input type="date" id="dialog-due-date">
+        
+            <button id="create-task">Add Task!</button>
+        </form>
+    </dialog>
 </body>
 </html>
