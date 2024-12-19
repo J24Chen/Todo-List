@@ -1,4 +1,4 @@
-#Todo-list
+# Todo-list
 A simple todo list that allows users to separate lists into different projects. Included Live Storage to keep user data as long as they are using the same machine.
 [Live Preview](https://j24chen.github.io/todo-list/)
 
