@@ -11,7 +11,7 @@ A simple todo list that allows users to separate lists into different projects. 
 - Refactoring is needed
 - Sorting by date is not yet accounted for
   
-##Additional Concepts
+## Additional Concepts
 - Use of other minor libraries through Webpack, such as date_fns for date formatting.
 
 - Webpack.js
@@ -19,7 +19,7 @@ A simple todo list that allows users to separate lists into different projects. 
 - Git/Github
 - Visual Studio Code
 
-##On Review
+## On Review
 After making such a project with multiple functionalities, I struggled with keeping up with specifics and how it conflicted with my roughly planned design of the website.
 Going forward, a whole plan out of the system, targetting how data is held, how different classes and objects communicate and researching main concepts before using them such 
 as Live Storage or date_fns will drastically increase the development time of projects.
