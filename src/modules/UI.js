@@ -11,9 +11,6 @@ export default class UI {
         UI.loadTasks(UI.getCurrentProject());
     }
 
-    static selectedIndex = 0;
-
-
     static initializeProjectButtons() {
         const buttons = document.querySelectorAll('.button-tab');
         for (let i = 0; i < buttons.length; i++){
