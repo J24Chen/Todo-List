@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✔✔Todo List</title>
+    
+    <script5a0e681a5691af3d2270.jsdex.js"defer></script>
+<script defer src="main.js"></script></head>
+<body>
+    <header>
+        <h1>Todo-ify</h1>
+    </header>
+
+    <section class="main">
+        
+        <section class="sidenav">
+            <div class="default-project-list">
+                <button class="button-tab active" id="button-main">Main</button>
+            </div>
+
+            <h1>Projects</h1>
+
+            <div class="user-project-list">
+                </div>
+            <button id="add-project">Add Project</button>
+            <div class="project-creation-popup">
+                <input type="text" id="project-name" maxlength="18" required>
+                <div class="create-project-buttons"> 
+                    <button class="add-button" id="project-add-button">Add</button>
+                    <button class="cancel-button" id="project-cancel-button">cancel</button>
+                </div>
+            
+            </div>
+            
+        </section>
+        
+        <section class="content">
+
+            <div class="content-container">
+                <div class="content-container-header">
+                    <h2>due date ^</h1>
+                    <h1 class="top-row-title">Main</h1>    
+                </div>
+                
+                <ul class="list-container">
+                   
+                </ul>    
+
+                <button id="add-task"> Add Task</button>
+            </div>
+
+
+        </section>
+    </section>
+    <dialog>
+        <button class="close-button" autofocus></button>
+        <form>
+            <label for="dialog-title">Title:</label>
+            <input type="text" id="dialog-title" required>
+
+            <label for="dialog-description">description</label>
+            <textarea id="dialog-description" rows ="5" cols="33" required> </textarea> 
+            
+            <p> Priority:</p>
+            <div class="priority-container">
+                <input type="radio"  id="low" value="low" name="priority" checked> 
+                <label for="low" class = "low">low</label>
+                <input type="radio" id="medium" value="medium" name="priority"> 
+                <label for="medium" class = "medium">medium</label>
+                <input type="radio"  id="high" value="high" name="priority"> 
+                <label for="high" class = "high">high</label>
+            </div>
+
+            <label for="dialog-due-date">Due Date:</label>
+            <input type="date" id="dialog-due-date">
+        
+            <button id="create-task">Add Task!</button>
+        </form>
+    </dialog>
+</body>
+</html>
