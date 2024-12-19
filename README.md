@@ -24,5 +24,5 @@ After making such a project with multiple functionalities, I struggled with keep
 Going forward, a whole plan out of the system, targetting how data is held, how different classes and objects communicate and researching main concepts before using them such 
 as Live Storage or date_fns will drastically increase the development time of projects.
 
-##Credits
+## Credits
 Shout out to the Odin Project and the community for allowing me to research and create this project :)
